@@ -151,6 +151,9 @@ typedef void (^MCSwipeCompletionBlock)(MCSwipeTableViewCell *cell, MCSwipeTableV
 /** Boolean to enable/disable the animation of the view during the swipe.  */
 @property (nonatomic, assign, readwrite) BOOL shouldAnimateIcons;
 
+/// Instant invoke custom action before swipe animation completed.
+@property (nonatomic, assign) BOOL isTriggerBeforeAnimationCompleted;
+
 /**
  *  Configures the properties of a cell.
  *
